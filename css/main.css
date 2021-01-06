@@ -1,0 +1,28 @@
+.mainbanner {
+  height: 550px;
+  margin-top: 60px;
+  background: url("../img/main_banner.jpg") no-repeat;
+  background-size: cover;
+}
+
+.inner:nth-child(1) {
+  margin-top: 50px;
+}
+
+.post {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  background: red;
+}
+
+.post img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.post .post_txt {
+  width: 340px;
+  height: 340px;
+}

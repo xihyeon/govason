@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>FIND&nbsp;A&nbsp;STORE</title>
+   <link rel="stylesheet" href="../css/style.css">
+   <script src="../js/jquery.min.js"></script>
+   <script src="../js/common.js"></script>
+    <!--[if lt IE 9]>
+      <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="subpage">
+  <div id="wrap">
+    <header id="header">
+      <a href="../index.html"><h1 id="top_logo"></h1></a>
+      <nav id="top_nav">
+        <ul>
+          <li><a href="../company/introduce.html">GOVASON&nbsp;IS</a>
+            <ul class="sub_menu">
+              <li><a href="../company/introduce.html">We&nbsp;about</a></li>
+              <li><a href="../company/ci.html">BI</a></li>
+              <li><a href="../company/history.html">Coffee&nbsp;History</a></li>
+            </ul>
+          </li>
+          <li><a href="../product/product.html">MENU</a></li>
+          <li><a href="../gallery/gallery.html">FIND&nbsp;A&nbsp;STORE</a></li>
+          <li><a href="../community/notice.html">NOTICE</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+   <main>
+     <!--컨텐츠 영역-->
+     <div class="container">
+       <!--왼쪽메뉴-->
+       <aside id="lnb">
+         <ul>
+           <li><a class="on" href="../location/location.html">FIND&nbsp;A&nbsp;STORE</a></li>
+         </ul>
+       </aside>
+       <!--컨텐츠 본문-->
+       <div class="content">
+         <h2 class="sub_title"><span>Location</span></h2>
+         <div class="inner">
+           <!--map-->
+           <div id="map" style="width: 1000px; height:350px; margin: 50px auto 0;"></div>
+         </div>
+       </div>
+     </div>
+   </main>
+   <footer id="footer">
+     <div class="footer_top">
+       <!-- footer 상단 영역 -->
+       <div class="container">
+         <div class="row">
+           <div class="column footer_logo">
+             <!-- footer logo -->
+             <h3><img src="../img/govason_logo.png" alt="logo"></h3>
+           </div>
+           <div class="column">
+             <!-- site map -->
+             <h4>site map</h4>
+             <ul>
+               <li><a href="../company/introduce.html">GOVASON&nbsp;IS</a></li>
+               <li><a href="../product/product.html">MENU</a></li>
+               <li><a href="../gallery/gallery.html">FIND&nbsp;A&nbsp;STORE</a></li>
+               <li><a href="../community/notice.html">NOTICE</a></li>
+             </ul>
+           </div>
+           <div class="column">
+             <!-- contact us -->
+             <h4>CONTACT&nbsp;US</h4>
+             <p>
+               본사 서울특별시 강남구 선릉로 135길 29 2F<br>
+               지사 대구광역시 동구 팔공로47길 46 캐슬빌딩 301호 <br>
+                <br>
+               <strong>대표자 이준모&nbsp;:</strong><a href="tel:+82-1600-7252">
+                 581-81-00911
+               </a><br>
+               <strong>Email&nbsp;:</strong><a href="mailto:mymail@naver.com">govason@coffee.com</a><br>
+             </p>
+           </div>
+           <div class="column news">
+             <!-- news -->
+             <h4>news</h4>
+             <p>
+               In GOVASON, employees are wearing masks to
+               prevent the new coronavirus.
+               Thank you for you patience.
+             </p>
+             <form action="">
+               <input type="search" name="search"><input type="submit" value="search">
+             </form>
+           </div>
+         </div>
+       </div>
+     </div>
+   </footer>
+  </div>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c78af4b591781fa05f01eccf11a55264"></script>
+  <script>
+  var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+      mapOption = {
+          center: new kakao.maps.LatLng(37.569981, 126.989927), // 지도의 중심좌표
+          level: 3 // 지도의 확대 레벨
+      };
+
+  var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+  // 마커가 표시될 위치입니다
+  var markerPosition  = new kakao.maps.LatLng(37.569981, 126.989927);
+
+  // 마커를 생성합니다
+  var marker = new kakao.maps.Marker({
+      position: markerPosition
+  });
+
+  // 마커가 지도 위에 표시되도록 설정합니다
+  marker.setMap(map);
+
+  // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+  // marker.setMap(null);
+  </script>
+</body>
+</html>

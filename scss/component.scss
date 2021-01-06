@@ -1,0 +1,141 @@
+//component
+
+.box {
+  display: flex;
+
+  &.bg-gray {
+    margin-top: 30px;
+    background-color: #cad8d1;
+  }
+
+  .items {
+    box-sizing: border-box;
+    padding: 50px;
+    flex: 100%;
+    font-size: $fontSizeMid;
+    overflow: hidden;
+
+    .title {
+      font-size: $titleFontSizeMid;
+      color: $fontColorTitle;
+      margin-bottom: 30px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    &.items_2 {
+      .items {
+        flex: 50%;
+      }
+    }
+  }
+}
+/*img margin*/
+
+//genernal button
+
+.gbtn {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: $gbtnColor;
+  color: white;
+  border: 1px solid $gbtnColor;
+
+  &:hover {
+    color: $gbtnColor;
+    background: white;
+  }
+}
+
+/*hover size_zoom img_box*/
+.hover_img_wrap{
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 400px;
+  .img_list_cover{
+    height: 400px;
+    overflow: hidden;
+    .title{
+      margin-top: 10px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .img_list_wrap{
+      position: relative;
+      width: 250px;
+      height: 300px;
+      background: blue;
+      top: 0;
+      overflow: hidden;
+      &.size_list{
+        width: 350px;
+        height: 350px;
+      }
+      &.size_list2{
+        width: 310px;
+        height: 350px;
+      }
+      .img_wrap2{
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .5s;
+        background-image: url('../img/menu/tea_01.jpg');
+        transform: scale(1.1);
+        overflow: hidden;
+        cursor: pointer;
+        &:hover{
+          transform: scale(1.2);
+        }
+        &.tea_01{
+          background-image: url('../img/menu/tea_01.jpg');
+        }
+        &.tea_02{
+          background-image: url('../img/menu/tea_02.jpg');
+        }
+        &.tea_03{
+          background-image: url('../img/menu/tea_03.jpg');
+        }
+        &.tea_04{
+          background-image: url('../img/menu/tea_04.jpg');
+        }
+        &.md_01{
+          background-image: url('../img/menu/md_01.jpg');
+        }
+        &.md_02{
+          background-image: url('../img/menu/md_02.jpg');
+        }
+        &.md_03{
+          background-image: url('../img/menu/md_03.jpg');
+        }
+        &.event01{
+          background-image: url('../img/event/event01.jpg');
+        }
+        &.event02{
+          background-image: url('../img/event/event02.jpg');
+        }
+        &.event03{
+          background-image: url('../img/event/event03.jpg');
+        }
+        &.event04{
+          background-image: url('../img/event/event04.jpg');
+        }
+        &.event05{
+          background-image: url('../img/event/event05.jpg');
+        }
+      }
+    }
+  }
+}
