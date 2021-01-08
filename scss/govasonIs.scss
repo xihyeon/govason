@@ -427,16 +427,29 @@ body.subpage{
     }
   }
 }
+
 /*product menu_wrap*/
 #menu_wrap{
   #m_tap1:checked ~ section#content1{
     display: block;
+    .notice_dd{
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+      color: #707070;
+    }
   }
   #m_tap2:checked ~ section#content2{
     display: block;
   }
   #m_tap3:checked ~ section#content3{
     display: block;
+    .notice_dd{
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+      color: #707070;
+    }
   }
   #m_tap4:checked ~ section#content4{
     display: block;
@@ -476,4 +489,35 @@ body.subpage{
   width: 100%;
   height: 50px;
   background: red;
+}
+
+#coffe_info_wrap{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  .cInfo_items{
+    position: relative;
+    width: 50%;
+    float: left;
+    &:nth-child(1){
+      width: 30%;
+    }
+    &:nth-child(2){
+      width: 70%;
+      padding-top: 60px;
+      text-align: right;
+      line-height: 25px;
+    }
+    img{
+      width: auto;
+      margin-bottom: 15px;
+      margin-right: 80px;
+      &:nth-child(even){
+        margin-right: 0;
+      }
+    }
+  }
+}
+body.subpage .content .inner .items .img_wrap{
+  margin-top: 100px;
 }

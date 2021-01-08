@@ -1287,12 +1287,26 @@ body.subpage .content .inner .items .img_wrap .img_item .item_img.drink_15 {
   display: block;
 }
 
+#menu_wrap #m_tap1:checked ~ section#content1 .notice_dd {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #707070;
+}
+
 #menu_wrap #m_tap2:checked ~ section#content2 {
   display: block;
 }
 
 #menu_wrap #m_tap3:checked ~ section#content3 {
   display: block;
+}
+
+#menu_wrap #m_tap3:checked ~ section#content3 .notice_dd {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #707070;
 }
 
 #menu_wrap #m_tap4:checked ~ section#content4 {
@@ -1338,6 +1352,43 @@ body.subpage .content .inner .items .img_wrap .img_item .item_img.drink_15 {
   width: 100%;
   height: 50px;
   background: red;
+}
+
+#coffe_info_wrap {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+#coffe_info_wrap .cInfo_items {
+  position: relative;
+  width: 50%;
+  float: left;
+}
+
+#coffe_info_wrap .cInfo_items:nth-child(1) {
+  width: 30%;
+}
+
+#coffe_info_wrap .cInfo_items:nth-child(2) {
+  width: 70%;
+  padding-top: 60px;
+  text-align: right;
+  line-height: 25px;
+}
+
+#coffe_info_wrap .cInfo_items img {
+  width: auto;
+  margin-bottom: 15px;
+  margin-right: 80px;
+}
+
+#coffe_info_wrap .cInfo_items img:nth-child(even) {
+  margin-right: 0;
+}
+
+body.subpage .content .inner .items .img_wrap {
+  margin-top: 100px;
 }
 
 .content#content_fullsize {
